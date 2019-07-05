@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        title{
+            background-color: green;
+            text-align: right;
+            color: blue;
+            padding: 2rem;
+
+        }
+        nav{
+            background-color: black;
+            color: white;
+            padding-left: 10px;
+        }
+        /*
+        inherit 
+        자신을 감싸고 있는 tag에 적용된 style을 상속받아서 적용하라
+        */
+        a{
+            color:inherit;
+        }
+        footer{
+            background-color: blue;
+            color: white;
+            padding: 1.2rem;
+        }
+        address{
+            text-align: center;
+        }
+        /* 
+        selector를 컴마(,) 여러개 지정하면
+        공통된 속성을 함께 지정할 수있다
+        */
+        #ar1,#ar2,#ar3 ,.arclass{
+            background-color: #ccc;
+            margin: 5px;
+            padding: 16px;
+        }
+        .arclass{
+            background-color: #ccc;
+            margin: 5px;
+            padding: 16px;
+        }
+        /*
+         box 크기를 원래크기(자신을 감싸는 어떤것)의 50%만큼 설정하라
+        */
+        #ar2{
+            width: 50%;
+        }
+        /*
+        margin: 0 auto;
+            margin 값에 top과 bottom을 임의 값으로 설정하고
+            ieft right는 자동설정하므로해서
+            box을 가운데 정렬하는 효과를 낸다
+        */
+        #ar3{
+            width: 50%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3 id="title">Latout 연습</h3>
+    </header>
+    <nav>
+        <a href="https://naver.com">네이버</a>&nbsp;&nbsp;
+        <a href="https://daum.net">다음</a>&nbsp;&nbsp;
+        <a href="https://google.com">구글</a>&nbsp;&nbsp;
+    </nav>
+    <section>
+    <article id="ar1" class="arclass">
+            대통령은 헌법과 법률이 정하는 바에 의하여 공무원을 임면한다. 국가는 평생교육을 진흥하여야 한다. 대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일 현재 40세에 달하여야 한다. 대통령의 임기연장 또는 중임변경을 위한 헌법개정은 그 헌법개정 제안 당시의 대통령에 대하여는 효력이 없다. 국토와 자원은 국가의 보호를 받으며, 국가는 그 균형있는 개발과 이용을 위하여 필요한 계획을 수립한다. 대통령이 궐위되거나 사고로 인하여 직무를 수행할 수 없을 때에는 국무총리, 법률이 정한 국무위원의 순서로 그 권한을 대행한다. 대통령은 내우·외환·천재·지변 또는 중대한 재정·경제상의 위기에 있어서 국가의 안전보장 또는 공공의 안녕질서를 유지하기 위하여 긴급한 조치가 필요하고 국회의 집회를 기다릴 여유가 없을 때에 한하여 최소한으로 필요한 재정·경제상의 처분을 하거나 이에 관하여 법률의 효력을 가지는 명령을 발할 수 있다.
+    </article>
+    <article id="ar2"class="arclass">
+            모든 국민은 통신의 비밀을 침해받지 아니한다. 대통령으로 선거될 수 있는 자는 국회의원의 피선거권이 있고 선거일 현재 40세에 달하여야 한다. 국가는 과학기술의 혁신과 정보 및 인력의 개발을 통하여 국민경제의 발전에 노력하여야 한다. 제1항의 해임건의는 국회재적의원 3분의 1 이상의 발의에 의하여 국회재적의원 과반수의 찬성이 있어야 한다. 정당은 법률이 정하는 바에 의하여 국가의 보호를 받으며, 국가는 법률이 정하는 바에 의하여 정당운영에 필요한 자금을 보조할 수 있다. 대통령은 법률이 정하는 바에 의하여 훈장 기타의 영전을 수여한다. 국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다.     </article>
+     <article id="ar3"class="arclass">
+            모든 국민은 그 보호하는 자녀에게 적어도 초등교육과 법률이 정하는 교육을 받게 할 의무를 진다. 국군의 조직과 편성은 법률로 정한다. 선거운동은 각급 선거관리위원회의 관리하에 법률이 정하는 범위안에서 하되, 균등한 기회가 보장되어야 한다. 누구든지 체포 또는 구속을 당한 때에는 즉시 변호인의 조력을 받을 권리를 가진다. 다만, 형사피고인이 스스로 변호인을 구할 수 없을 때에는 법률이 정하는 바에 의하여 국가가 변호인을 붙인다. 국회의원은 현행범인인 경우를 제외하고는 회기중 국회의 동의없이 체포 또는 구금되지 아니한다. 모든 국민은 소급입법에 의하여 참정권의 제한을 받거나 재산권을 박탈당하지 아니한다.
+
+        </article>           
+    </section>
+    <footer>
+        <address> copyRight &copy; cally91@naver.com</address>
+    </footer>
+
+</body>
+</html>

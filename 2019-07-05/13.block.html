@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        span.sa,span.sb,span.sc{
+            border: 1px solid blue;
+            background-color: green;
+            color: blue;
+        }
+        /*span teg 는 기본 display 속성이 inline*/
+        span.sa{
+            display: inline;
+            width: 100px;
+            height: 100px;
+        }
+        /*
+        inline-block
+        width와 heignt 를 지정하여 박스 크기를 만들 수있지만
+        inline과 같은 글다로서의 속성을 일부 유지한다.
+        */
+        span.sb{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+        /*
+            block
+            일반적인 block tag성질 그대로 모두 물려 받는다
+        */
+        span.sc{
+            display: block;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+            <span class="sa">대한민국</span>은 <span class="sb">통일</span>을 지향하며,
+            자유민주적 기본질서에 입각한 <span class="sc">평화적 통일 정책</span>을 수립하고 이를 추진한다.
+            국회의 회의는 공개한다. 다만, 출석의원 과반수의 찬성이 있거나 의장이 국가의 안전보장을
+            위하여 필요하다고 인정할 때에는 공개하지 아니할 수 있다. 국가는 평생교육을 진흥하여야 한다.
+                재판의 전심절차로서 행정심판을 할 수 있다.
+                행정심판의 절차는 법률로 정하되, 사법절차가 준용되어야 한다.
+                모든 국민은 소급입법에 의하여 참정권의 제한을 받거나 재산권을 박탈당하지 아니한다.
+                재산권의 행사는 공공복리에 적합하도록 하여야 한다. 국가는 건전한
+                소비행위를 계도하고 생산품의 품질향상을 촉구하기 위한 소비자보호운동을 법률이 정하는 바에 의하여 보장한다.
+                </div>
+    
+</body>
+</html>
