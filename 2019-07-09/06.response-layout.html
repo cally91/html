@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        section.main {
+            display: flex;
+            flex-flow: wrap;
+            /*화면이 작아지면 줄바꿈하여 표시*/
+
+        }
+
+        section.main article {
+            background-color: #eee;
+            flex: 600px;
+            /*flex : 1 1 600px;*/
+        }
+
+        section.main nav {
+            background-color: #ddd;
+            min-height: 50px;
+            flex: 150px;
+            order: -1;
+            line-height: 2em;
+            padding: 0;
+        }
+
+        section.main aside {
+            background-color: #ccf;
+            min-height: 50px;
+            flex: 150px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            border-bottom: tomato 1px solid;
+        }
+
+        ul a {
+            display: block;
+            text-decoration: none;
+            padding-left: 10px;
+        }
+
+        ul a:hover {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>제목</h1>
+    </header>
+    <section class="main">
+        <article>
+            <p>대한민국</p>
+            국군은 국가의 안전보장과 국토방위의 신성한 의무를 수행함을 사명으로 하며, 그 정치적 중립성은 준수된다. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다.
+            국민경제자문회의의
+            조직·직무범위 기타 필요한 사항은 법률로 정한다. 탄핵결정은 공직으로부터 파면함에 그친다. 그러나, 이에 의하여 민사상이나 형사상의 책임이 면제되지는 아니한다. 헌법재판소 재판관은 탄핵 또는
+            금고 이상의 형의 선고에
+            의하지 아니하고는 파면되지 아니한다. 외국인은 국제법과 조약이 정하는 바에 의하여 그 지위가 보장된다. 모든 국민은 언론·출판의 자유와 집회·결사의 자유를 가진다.
+        </article>
+        <nav>
+            <ul>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+            </ul>
+        </nav>
+        <aside>
+            Aside
+        </aside>
+    </section>
+    <footer>footer</footer>
+</body>
+
+</html>
