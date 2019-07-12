@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+    nav.main-menu{
+        display: flex;
+        background-color: RGB(46,117,182);
+    }
+    nav.main-menu img{
+        height: 30px;
+        transition: 0.3s;
+    }
+    
+    header{
+        background-color: green;
+        padding: 1rem
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="../images/my_Logo.png" alt="Logo" width="100px"></a>
+    </header>
+    <nav class="main-menu">
+        <img id="m-home" src="../images/menu/manu_home.png">
+        <img id="m-book" src="../images/menu/menu_book.png">
+        <img id="m-book-read" src="../images/menu/menu_book_read.png">
+        <img id="m-login" src="../images/menu/menu_login.png">
+        <img id="m-join" src="../images/menu/menu_book_join.png">
+    </nav>
+</body>
+<script>
+
+    var img_home =document.getElementById("m-home")
+    var img_book =document.getElementById("m-book")
+    var img_book_read =document.getElementById("m-book-read")
+    var img_login = document.getElementById("m-login")
+    var img_join =document.getElementById("m-join")
+
+    //마우스가 이미지를 올려졌을때
+    img_home.onmouseover = function(){
+    img_home.src = src="../images/menu/manu_home-h.png"
+    } 
+    //마우스가 이미지를 벗어날때
+       img_home.onmouseout = function(){
+        img_home.src="../images/menu/manu_home.png"
+    }
+
+    img_book.onmouseover = function(){
+    img_book.src = src="../images/menu/menu_book_h.png"
+    } 
+    //마우스가 이미지를 벗어날때
+       img_book.onmouseout = function(){
+        img_book.src="../images/menu/menu_book.png"
+    }
+
+    img_book_read.onmouseover = function(){
+    img_book_read.src = src="../images/menu/menu_book_read_h.png"
+    } 
+    //마우스가 이미지를 벗어날때
+       img_book_read.onmouseout = function(){
+        img_book_read.src="../images/menu/menu_book_read.png"
+    }
+    img_login.onmouseover = function(){
+    img_login.src = src="../images/menu/menu_login.png"
+    } 
+    //마우스가 이미지를 벗어날때
+       img_login.onmouseout = function(){
+        img_login.src="../images/menu/manu_home.png"
+    }
+    img_home.onmouseover = function(){
+    img_home.src = src="../images/menu/manu_home-h.png"
+    } 
+    //마우스가 이미지를 벗어날때
+       img_home.onmouseout = function(){
+        img_home.src="../images/menu/manu_home.png"
+    }
+</script>
+</html>
